@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;700&family=Fira+Sans&family=Montserrat&family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: dimgray;
+    color: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.main {
+    /* background-color:darkgrey; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* justify-content: space-evenly; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(238, 235, 235);
+}
+
+.right {
+    padding: 0px 30px;
+}
+
+.txt {
+    margin-top: 14px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+#reset {
+    padding: 5px 26px;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    margin-top: 19px;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+@media screen and (max-width: 560px) {
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+
+    .box {
+        font-size: 7vw;
+    }
+
+    .right {
+        margin-top: 39px;
+    }
+
+    .right h1 {
+        font-size: 1.5rem;
+    }
+}
